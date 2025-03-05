@@ -1,0 +1,682 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f0f8f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #ffffff;
+    border-bottom: 2px solid #5cb85c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5cb85c;
+    font-family: 'Georgia', serif;
+}
+
+.logo .location {
+    font-size: 14px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5cb85c;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-area {
+    padding: 50px 5%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-area h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-area p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+.contact-details p {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-details p strong {
+    color: #333;
+}
+
+/* Contact Form Section */
+.contact-form-box {
+    padding: 50px 5%;
+    background: #f0f8f5;
+    text-align: center;
+}
+
+.contact-form-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form-box form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form-box .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form-box textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form-box .btn {
+    display: inline-block;
+    background: #5cb85c;
+    color: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form-box .btn:hover {
+    background: #4cae4c;
+    transform: scale(1.05);
+}
+
+/* Social Media Section */
+.social-links-box {
+    padding: 50px 5%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.social-links-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-links-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    padding: 20px 5%;
+    background: #5cb85c;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 5%;
+    background: #e8f5e9;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 0;
+    color: #2e7d32;
+}
+
+header {
+    background-color: #1b5e20;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #4caf50;
+}
+
+.about-intro, .about-me, .why-choose-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-intro h2, .about-me h2, .why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1b5e20;
+}
+
+.about-intro p, .about-me p, .why-choose-us p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-images {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-images img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    padding: 20px;
+}
+
+.why-choose-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.choose-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.choose-item {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.choose-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #388e3c;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+/* Services Section */
+.services {
+    padding: 50px 5%;
+    background: #f0f8f5;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background: #d0f0c0;
+}
+
+/* Roof Cleaning Process */
+.our-process {
+    padding: 50px 5%;
+    background: #ffffff;
+}
+
+.our-process h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step:hover {
+    transform: scale(1.05);
+    background: #d0f0c0;
+}
+
+/* Before & After Section */
+.before-after {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f0f8f5;
+}
+
+.before-after h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.before-after h2::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #5cb85c;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.before-after-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.before-after-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: left;
+}
+
+.before-after-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.before-after-item p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px 5%;
+    background: #ffffff;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+    background: #d0f0c0;
+}
+
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Call to Action */
+.contact-cta {
+    text-align: center;
+    padding: 50px 5%;
+    background: #d0f0c0;
+    color: white;
+}
+
+.contact-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta .btn {
+    background: #5cb85c;
+}
+
+/* Booking Section */
+.booking {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.booking h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.booking h2::after {
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #5cb85c;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.booking-form .btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form .btn:hover {
+    background-color: #ff3b2f;
+}
+
+/* Footer */
+footer {
+    padding: 20px 5%;
+    background: #5cb85c;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* About Intro Section */
+.about-intro {
+    padding: 50px 5%;
+    background: #e8f5e9;
+    text-align: center;
+ ▋
+
+
+ 

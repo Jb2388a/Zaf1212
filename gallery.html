@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Zaf Roof Cleaning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f8f5;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: #1b5e20;
+            color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 50px; 
+        }
+
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            font-family: 'Georgia', serif;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #4caf50;
+        }
+
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            padding: 50px 5%;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-family: 'Open Sans', sans-serif;
+            color: #1b5e20;
+        }
+
+        .gallery-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            width: 350px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            background: #d0f0c0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1b5e20;
+        }
+
+        #lightbox {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+
+        #lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .expanded-gallery {
+            padding: 50px 5%;
+            text-align: center;
+            background-color: #e8f5e9;
+        }
+
+        .expanded-gallery h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+            color: #1b5e20;
+        }
+
+        .expanded-gallery p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .expanded-gallery .gallery-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .expanded-gallery .gallery-item {
+            width: 350px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .expanded-gallery .gallery-item:hover {
+            transform: scale(1.05);
+            background: #c8e6c9;
+        }
+
+        .expanded-gallery .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .expanded-gallery .gallery-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #1b5e20;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="logo">
+        <img src="" alt="">
+        <span>Zaf Roof Cleaning</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book a Service</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Gallery -->
+<section class="gallery">
+    <h2>Before & After Photos</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item clickable">
+            <h3>Example 1</h3>
+            <img src="photos/unnamed2.jpg" alt="Before Roof Cleaning">
+            <img src="photos/unnamed.jpg" alt="After Roof Cleaning">
+        </div>
+
+        <div class="gallery-item clickable">
+            <h3>Example 2</h3>
+            <img src="photos/ema1.jpg" alt="Before Roof Cleaning">
+            <img src="photos/ema2.jpg" alt="After Roof Cleaning">
+        </div>
+
+        <div class="gallery-item clickable">
+            <h3>Example 3</h3>
+            <img src="photos/el1.jpg" alt="Before Roof Cleaning">
+            <img src="photos/el2.jpg" alt="After Roof Cleaning">
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded View">
+</div>
+
+<!-- Gallery -->
+<section class="expanded-gallery">
+    <h2>Our Recent Roof Cleaning Projects</h2>
+    <p>Take a look at some of our recent roof cleaning projects and see the difference we can make to your property.</p>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <h3>Project 1</h3>
+            <img src="photos/19.jpg" alt="Project 1 Before Roof Cleaning">
+            <img src="photos/20.jpg" alt="Project 1 After Roof Cleaning">
+        </div>
+
+        <div class="gallery-item">
+            <h3>Project 2</h3>
+            <img src="photos/w88.jpg" alt="Project 2 Before Roof Cleaning">
+            <img src="photos/w1.jpg" alt="Project 2 After Roof Cleaning">
+        </div>
+
+        <div class="gallery-item">
+            <h3>Project 3</h3>
+            <img src="photos/w9.jpg" alt="Project 3 Before Roof Cleaning">
+            <img src="photos/w10.jpg" alt="Project 3 After Roof Cleaning">
+        </div>
+    </div>
+</section>
+
+<script>
+    // Lightbox 
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const close = document.querySelector('.close');
+
+    document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    close.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', event => {
+        if (event.target !== lightboxImg) {
+            lightbox.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

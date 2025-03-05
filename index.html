@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zaf Roof Cleaning - Quality Roofs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background-image: url('photos/w3.jpg'); /* background */
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: #90EE90;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* overlay */
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1em;
+      color: #fff;
+      background-color: #00796b; /* Teal background */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e0f7fa; /* Darker teal */
+    }
+
+    .about-emahous {
+      background-color: #e0f7fa; /* Light background */
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 90%;
+      margin: 20px auto;
+    }
+
+    .about-emahous h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-photo {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .about-photo img {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .about-details {
+      flex: 2 1 400px;
+    }
+
+    .about-item {
+      margin-bottom: 20px;
+    }
+
+    .about-item h3 {
+      font-size: 1.4em;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .about-item p {
+      font-size: 1em;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .contact-cta {
+      background: #e8f5e9;
+      color: #333;
+      text-align: center;
+      padding: 40px 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin: 40px auto;
+    }
+
+    .contact-cta .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-cta p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-cta .cta-btn {
+      display: inline-block;
+      background: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-cta .cta-btn:hover {
+      background: #388e3c;
+      transform: scale(1.05);
+    }
+
+    .big-button-cta {
+      padding: 50px 5%;
+      background: #4caf50;
+      text-align: center;
+      color: #fff;
+    }
+
+    .big-button-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .big-button-cta p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .big-button-cta .big-btn {
+      display: inline-block;
+      background: #1b5e20;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .big-button-cta .big-btn:hover {
+      background: #388e3c;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <span>Zaf Roof Cleaning</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="booking.html" class="nav-link">Book a Service</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <div class="hero-content">
+      <h1>Professional Roof Cleaning</h1>
+      <p>Protect & fix your roof with quality washing.</p>
+      <a href="contact.html" class="btn" aria-label="Get Free Estimate">Get a Free Estimate</a>
+    </div>
+  </section>
+
+  <!-- About Emahous  -->
+  <section class="about-emahous fade-in">
+    <h2>Meet Emahous</h2>
+    <div class="about-content">
+      <div class="about-photo" style="text-align: center;">
+        <img src="photos/emahous.jpg" alt="Emahous" class="emahous-img" width="200" height="300">
+      </div>
+      <div class="about-details">
+        <div class="about-item">
+          <h3>Dedicated to Excellence</h3>
+          <p> With more than 5 years of experience, Emahous guides the team with diligence and commitment. He is proud to ensure that each roof receives the necessary attention it deserves.</p>
+        </div>
+        <div class="about-item">
+          <h3> Quality Assurance</h3>
+          <p>Emahous focuses on every detail and employs safe, environmentally friendly techniques. He guarantees that your roof is not only clean but also well-maintained.</p>
+        </div>
+        <div class="about-item">
+          <h3> Future Vision</h3>
+          <p>Constantly seeking improvement, Emahous stays informed about the latest roof cleaning techniques. His objective is to provide the best solutions for every residence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services fade-in">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Roof Wash</h3>
+        <p>Removes dirt, moss & stains for a cleaner look.</p>
+      </div>
+
+      <div class="service-item">
+        <h3>Gutter Cleaning</h3>
+        <p>Prevents clogging & maintains proper rain flow.</p>
+      </div>
+
+      <div class="service-item">
+        <h3>Soft Washing</h3>
+        <p>Low-pressure cleaning for long-term roof care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roof Cleaning Process -->
+  <section class="our-process fade-in">
+    <h2>Cleaning Steps for Roofs</h2>
+    <div class="process-steps">
+      <div class="step">
+        <h3>Step 1: Roof Checkup</h3>
+        <p>We inspect for moss, dirt, and damage before cleaning.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 2: Washing</h3>
+        <p>Eco-friendly removal of moss, dirt & algae.</p>
+      </div>
+
+      <div class="step">
+        <h3>Step 3: Protection</h3>
+        <p>A protective coating is applied for durability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After  -->
+  <section class="before-after fade-in">
+    <h2>Before & After</h2>
+    <div class="before-after-list">
+      <div class="before-after-item">
+        <img src="photos/before1.jpg" alt="Before Cleaning" width="200" height="150">
+        <img src="photos/b8.jpg" alt="After Cleaning" width="200" height="150">
+        <p></p>
+
+      </div>
+      <div class="before-after-item">
+        <img src="photos/new0.jpg" alt="Before Cleaning" width="200" height="150">
+        <img src="photos/new1.jpg" alt="After Cleaning" width="200" height="150">
+        <p></p>
+      </div>
+      <div class="before-after-item">
+        <img src="photos/before32.jpg" alt="Before Cleaning" width="200" height="150">
+
+
+        <img src="photos/after32.jpg" alt="After Cleaning" width="200" height="150">
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials fade-in">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-list">
+      <div class="testimonial-item">
+        <p>"Cleaned my roof for a great price. Will definitely recommend to home owners."</p>
+
+        <h4>- Ryan S.</h4>
+      </div>
+
+
+      <div class="testimonial-item">
+        <p>"Did great work! Ended up doing a lot work for our neighborhood!"</p>
+        <h4>- Andrew. T</h4>
+      </div>
+
+      <div class="testimonial-item">
+        <p>"Love the work Emahous does. Quality products, while also having fair prices."</p>
+        <h4>- Yonas. A</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="contact-cta fade-in">
+    <div class="cta-content">
+      <h2>Get a Free Roof Inspection!</h2>
+      <p>Our experts will thoroughly inspect your roof and provide a detailed report. Ensure the longevity and safety of your roof with our professional services.</p>
+      <a href="contact.html" class="cta-btn" aria-label="Contact Today">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!--  Booking  -->
+  <section class="big-button-cta fade-in">
+    <h2>Ready to Book a Service?</h2>
+    <p>Click the button below to schedule your roof cleaning service with us.</p>
+    <a href="booking.html" class="big-btn" aria-label="Book Now">Book Now</a>
+  </section>
+
+</body>
+
+</html>
